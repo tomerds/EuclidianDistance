@@ -136,6 +136,14 @@ def main():
 
     print(precision_1_count, precision_5_count, precision_10_count)
 
+    count = 0
+    for batch in results_list:
+        for image in batch:
+            count += 1
+    
+    print(count)
+
+
 
 
 if __name__ == "__main__":
